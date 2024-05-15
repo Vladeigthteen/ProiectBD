@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenti</title>
+</head>
+<body>
+    <h1>Lista Studenti</h1>
+    <table border="1">
+        <tr>
+            <th>IdStudent</th>
+            <th>Nume</th>
+            <th>Prenume</th>
+            <th>Data Nasterii</th>
+            <th>Medie</th>
+            <th>Actiuni</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student[0] }}</td>
+            <td>{{ student[1] }}</td>
+            <td>{{ student[2] }}</td>
+            <td>{{ student[3] }}</td>
+            <td>{{ student[4] }}</td>
+            <td>
+                <form action="{{ url_for('delete_student', id=student[0]) }}" method="POST">
+                    <button type="submit">Sterge</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Adauga Student</h2>
+    <form action="/add" method="POST">
+        <label for="id">IdStudent:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="nume">Nume:</label><br>
+        <input type="text" id="nume" name="nume"><br>
+        <label for="prenume">Prenume:</label><br>
+        <input type="text" id="prenume" name="prenume"><br>
+        <label for="data_nasterii">Data Nasterii:</label><br>
+        <input type="text" id="data_nasterii" name="data_nasterii"><br>
+        <label for="medie">Medie:</label><br>
+        <input type="text" id="medie" name="medie"><br><br>
+        <button type="submit">Adauga Student</button>
+    </form>
+</body>
+</html>

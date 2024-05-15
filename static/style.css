@@ -1,0 +1,98 @@
+*
+
+
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar
+{
+    position:sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to right,#5fa9df,#3978a5);
+    padding: 0 !important;
+}
+.dropdown-menu 
+{
+    background-image: linear-gradient(to right,#5fa9df,#3978a5);
+    border: none;
+    border: none !important;
+
+}
+.navbar-brand img{
+    height:5;
+    padding: left 5; ;
+}
+
+/*----------------banner-------------*/
+#banner{
+
+    background-image:linear-gradient(to right,#5fa9df,#3978a5) ;
+    color: #000000;
+    padding-top: 3%;
+    padding-right: 15%;
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*-------------Stock Table---------*/
+
+.table-dark{
+    background-color: #5fa9df;
+}
+
+.caption{
+    font-size:20px ;
+    font-style: inherit;
+    color: #3978a5;
+    font:500;
+}
+.Adauga_Stock{
+    font-size:30px ;
+    font-style: inherit;
+    color: #3978a5;
+    font:500;
+}
+.Adauga_Stock2{
+    font-size:20px ;
+    font-style: inherit;
+    color: #3978a5;
+    font:500;
+}
+.Adauga_Buton{
+    font-size:20px ;
+    
+    border: #3978a5;
+    background-image:linear-gradient(to right,#5fa9df,#3978a5) ;
+    font-style: inherit;
+    font-style:italic;
+    color: #000000;
+    font:500;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 12px 28px;
+    text-align: center;
+    
+}
+.Adauga_Buton:hover { background-image:linear-gradient(to right,#3d9add,#285a7e)}
+
+.Adauga_Buton:active {
+  background-color: #447496;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.InsertBox{
+    border: 0.5px solid #3978a5;
+    background-image:linear-gradient(to right,#5fa9df,#3978a5) ;
+    color: #000000;
+
+   
+}
